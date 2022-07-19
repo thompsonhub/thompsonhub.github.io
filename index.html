@@ -1,1 +1,933 @@
-Hello, World!
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.74.2" />
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://www.jumpingrivers.com/">
+
+<title>Jumping Rivers</title>
+
+<style>
+  .insider-header-wrapper {
+    text-align: center;
+  }
+  .site-logo {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .site-logo svg.loaded path {
+    animation: dash 5s linear forwards;
+  }
+</style>
+
+
+<link rel="shortcut icon" href="" />
+<link href='https://d33wubrfki0l68.cloudfront.net/bundles/a8e92b50a995cee9f10510d40c1e51d09ff64064.css' rel='stylesheet'/>
+
+
+
+
+
+
+
+
+
+
+
+
+<link
+href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Raleway:wght@600&family=Source+Code+Pro:wght@400&display=swap"
+  rel="stylesheet"
+/>
+
+
+<script src='https://d33wubrfki0l68.cloudfront.net/js/371c843734190911a4564e4a12740d675ed65213/js/shopping-cart.js' type='text/javascript'></script>
+<script>
+  (function() {
+    'use strict';
+
+    let discountPercentage = 25;
+
+    window.cart = initShoppingCart()
+      .setDiscountPercentage(discountPercentage);
+
+    window.cartUtils = {
+      translateDate(dateString) {
+        let dateSplit = dateString.split(' ');
+        let dateMonth = dateSplit[0];
+        let dateDay = dateSplit[1].split(',')[0];
+        let dateYear = dateSplit[2];
+
+        let months = {
+          '01': 'January',
+          '02': 'February',
+          '03': 'March',
+          '04': 'April',
+          '05': 'May',
+          '06': 'June',
+          '07': 'July',
+          '08': 'August',
+          '09': 'September',
+          '10': 'October',
+          '11': 'November',
+          '12': 'December',
+        };
+
+        let dateTranslatedMonth = Object.keys(months).find(month => months[month] === dateMonth);
+        let dateTranslatedDay = dateDay.length < 2 ? `0${dateDay}` : dateDay;
+
+        let machineDate = new Date(`${dateYear}-${dateTranslatedMonth}-${dateTranslatedDay}`);
+
+        return machineDate;
+      }
+    };
+  })();
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39013512-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-39013512-1');
+</script>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.jumpingrivers.com/images/tr1.jpg"/>
+
+<meta name="twitter:title" content="Jumping Rivers"/>
+<meta name="twitter:description" content="Jumping Rivers is an analytics company whose passion is data and machine learning. We help our clients move from data storage to data insights."/>
+<meta name="twitter:site" content="@jumping_uk"/>
+
+
+
+
+  <link href='https://d33wubrfki0l68.cloudfront.net/bundles/c987728775833329d3e1390b4e142bf5b0350d35.css' rel='stylesheet'/>
+  
+  
+  
+  <script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "Jumping Rivers",
+      "url" : "https://www.jumpingrivers.com",
+      "sameAs" : [
+          "https://github.com/jumpingrivers",
+          "https://twitter.com/jumping_uk",
+          "https://www.linkedin.com/company/21945868/",
+          "https://www.youtube.com/channel/UCQMSMvzGNuUwHq6W6zlZq_A/featured"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  
+  
+  <div class="header">
+    <div class="header-mid">
+      <div class="header-right">
+        <div class="icon">
+          <a href="https://github.com/jumpingrivers" aria-label="GitHub"><i class="fa fa-github-alt"></i></a>
+          <span>GitHub</span>
+        </div>
+
+        <div class="icon">
+          <a href="https://www.linkedin.com/company/21945868/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <span>LinkedIn</span>
+        </div>
+
+        <div class="icon">
+          <a href="https://twitter.com/jumping_uk" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+          <span>Twitter</span>
+        </div>
+
+        <div class="icon">
+          <a href="https://www.youtube.com/channel/UCQMSMvzGNuUwHq6W6zlZq_A/featured" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+          <span>YouTube</span>
+        </div>
+
+        <div class="icon">
+          <a href="/blog/index.xml" aria-label="RSS"><i class="fa fa-rss"></i></a>
+          <span>RSS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="header-mid logo-up">
+  <div class="logo">
+
+    <a href="/" aria-label="Home">
+
+
+<div class="insider-header-wrapper">
+<div class="site-logo">
+
+<svg width="100%" viewBox="0 0 626.59695 418.37405" class="loaded">
+<path id="logo-line1" d="M36.9,311.45C36.9,311.45,44.28166666666667,358.0733333333333,67.9,332.12C91.51833333333335,306.1666666666667,147.61166666666668,167.90833333333333,178.61,155.73C209.60833333333335,143.55166666666665,234.08666666666664,248.4716666666667,253.89,259.05C273.6933333333333,269.62833333333333,284.8833333333333,221.41333333333333,297.43,219.2C309.9766666666667,216.98666666666665,313.79333333333335,253.39666666666668,329.17,245.77C344.5466666666667,238.14333333333335,366.44166666666666,165.32166666666666,389.69,173.44C412.93833333333333,181.55833333333334,440.12333333333333,297.06333333333333,468.66,294.48C497.1966666666667,291.8966666666667,539.2616666666667,166.79666666666668,560.91,157.94C582.5583333333333,149.08333333333331,598.55,241.34,598.55,241.34" stroke="#000000" stroke-width="8" fill="none" stroke-dasharray="1016.8580322265625 1016.8580322265625" stroke-dashoffset="1017"></path>
+<path id="logo-line2" d="M5.9,266.43C5.9,266.43,10.330000000000002,310.95666666666665,33.21,284.88C56.09,258.80333333333334,112.05833333333334,120.17833333333333,143.18,109.97C174.30166666666668,99.76166666666667,200.13666666666666,219.07833333333332,219.94,223.63C239.74333333333334,228.18166666666667,249.82333333333332,141.46333333333334,262,137.28C274.1766666666667,133.09666666666666,278.23833333333334,207.01833333333335,293,198.53C307.76166666666666,190.04166666666666,327.32166666666666,78.35333333333332,350.57,86.35C373.8183333333333,94.34666666666666,403.46000000000004,241.83499999999998,432.49,246.51C461.52,251.185,502.9766666666667,123.01166666666667,524.75,114.4C546.5233333333333,105.78833333333334,563.13,194.84,563.13,194.84" stroke="#000000" stroke-width="5" fill="none" stroke-dasharray="1147.2138671875 1147.2138671875" stroke-dashoffset="1150"></path>
+<path id="logo-line3" d="M44.28,234.7C44.28,234.7,49.080000000000005,277.99333333333334,71.59,251.67C94.1,225.34666666666666,148.09666666666666,88.44500000000001,179.34,76.76C210.58333333333334,65.075,238.87666666666667,171.105,259.05,181.56C279.22333333333336,192.01500000000001,288.0783333333333,142.32,300.38,139.49C312.6816666666667,136.66000000000003,317.6066666666667,186.10666666666668,332.86,164.58C348.11333333333334,143.05333333333334,368.8983333333333,1.7183333333333355,391.9,10.33C414.90166666666664,18.941666666666663,441.84,204.68666666666667,470.87,216.25C499.90000000000003,227.81333333333333,544.0616666666667,89.18166666666666,566.08,79.71C588.0983333333334,70.23833333333333,602.98,159.42,602.98,159.42" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="1166.1278076171875 1166.1278076171875" stroke-dashoffset="1170"></path>
+<path id="logo-line4" d="M31.74,267.17C31.74,267.17,35.185,311.45,58.31,284.88C81.435,258.31,139.24666666666667,119.55833333333334,170.49,107.75C201.73333333333335,95.94166666666666,226.21166666666667,203.205,245.77,214.03C265.3283333333333,224.855,275.0483333333333,175.5283333333333,287.84,172.7C300.63166666666666,169.87166666666667,307.02166666666665,204.56333333333333,322.52,197.06C338.0183333333333,189.55666666666667,357.82666666666665,119.19333333333334,380.83,127.68C403.8333333333333,136.16666666666669,432.00333333333333,250.56333333333333,460.54,247.98C489.0766666666667,245.39666666666665,531.5083333333333,122.75833333333334,552.05,112.18C572.5916666666666,101.60166666666667,583.79,184.51,583.79,184.51" stroke="#000000" stroke-width="1" fill="none" stroke-dasharray="1000.6301879882812 1000.6301879882812" stroke-dashoffset="1000"></path>
+<text id="logo-text" y="380" x="610" font-family="Lato" font-size="65px" style="font-weight: 300;letter-spacing: 0.3rem;" text-anchor="end">jumping rivers</text>
+</svg>
+
+
+
+<script>
+var svgLogo = document.querySelector('.site-logo svg');
+svgLogo.classList.add('loaded');
+</script>
+
+
+</div>
+</div>
+
+
+
+    </a>
+
+  </div>
+
+  <div class="menu-res">
+    <span role="button" tabindex="0" aria-expanded="false" aria-controls="main-menu"><span class="icon-span"><i class="fa fa-bars"></i></span> MENU</span>
+  </div>
+</div>
+
+<div class="sticky">
+  <div class="header-mid">
+    <div id="main-menu" class="main-menu" data-burger="closed">
+      <a href="/" class="unscrolled"
+        ><img src="https://d33wubrfki0l68.cloudfront.net/22ff1364c799634f087a961e30db141970102c69/842d6/images/jr-moblle-sticky.jpg" alt="logo"
+      /></a>
+      <ul>
+        
+        <li>
+          <a href="/about" tabindex="-1" class="nav-entry"><span tabindex="0">ABOUT</span> <span role="button" class="sub-menu-toggle" aria-label="Press down key to open menu of related links" aria-expanded="false" aria-controls="about-sub-menu"><i class="fa fa-angle-down" tabindex="0"></i></span></a>
+          <ul id="about-sub-menu" class='sub-menu'>
+            <li><a href="/community" class="nav-entry"><span>COMMUNITY</span></a></li>
+            <li><a href="/conferences" class="nav-entry"><span>Conferences<span></a></li>
+            <li><a href="https://jumping-rivers.welcomekit.co/" target="_blank" class="nav-entry"><span>JOIN US</span></a></li>
+            <li><a href="/contact" class="nav-entry">CONTACT</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/training" tabindex="-1" class="nav-entry"><span tabindex="0">TRAINING</span> <span role="button" class="sub-menu-toggle" aria-label="Press down key to open menu of related links" aria-expanded="false" aria-controls="training-sub-menu"><i class="fa fa-angle-down"  tabindex="0"></i></span></a>
+          <ul id="training-sub-menu" class='sub-menu'>
+            <li><a href="/training/all-courses" class="nav-entry"><span>ALL COURSES</span></a></li>
+            <li><a href="/training/public" class="nav-entry"><span>PUBLIC</span></a></li>
+          </ul>
+        </li>
+        
+        
+            
+                <li class="">
+                    <a href="/consultancy" tabindex="-1" class="nav-entry">
+                        
+                        <span tabindex="0">consultancy</span>
+                        <span role="button" class="sub-menu-toggle" aria-label="Press down key to open menu of related links" aria-expanded="false" aria-controls="consultancy-sub-menu"><i class="fa fa-angle-down" tabindex="0"></i></span></a>
+
+                <ul id="consultancy-sub-menu" class="sub-menu">
+                    
+                        <li class="">
+                            <a href="/consultancy/infrastructure-review/" class="nav-entry"><span>Data Infrastructure Review</span></a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="/consultancy/managed-rstudio-rsconnect-cloud-production/" class="nav-entry"><span>Managed RStudio</span></a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="/consultancy/data-science-machine-learning/" class="nav-entry"><span>Data Science &amp; ML</span></a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="/consultancy/data-architecture-security-cloud-continuous-integration/" class="nav-entry"><span>Architecture &amp; Security</span></a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="/consultancy/r-python-stan-development-support/" class="nav-entry"><span>R &amp; Python Development</span></a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="/consultancy/shiny-dash-flask-dashboard-consultancy/" class="nav-entry"><span>Shiny Dashboards</span></a>
+                        </li>
+                    
+                </ul>
+              </li>
+            
+        
+        <li><a href="/case-studies" class="nav-entry"><span>CASE STUDIES</span></a></li>
+        <li><a href="/blog" class="nav-entry"><span>BLOG</span></a></li>
+        <li id="cart-element">
+          <a href="/cart" class="nav-entry"><span><i class="fa fa-shopping-cart"></i><span id="cart-count"></span><span class="items">ITEM</span><span id="plural"></span></span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-border"></div>
+</div>
+
+
+
+
+
+<script>
+  (function() {
+    'use strict';
+
+    const mainMenu = document.querySelector('.main-menu');
+    const burgerMenu = document.querySelector('.menu-res > span');
+    const burgerIcon = burgerMenu.querySelector('.icon-span i');
+    const toggleBtns = Array.from(document.querySelectorAll('.main-menu .sub-menu-toggle'));
+
+    const getControlledElement = function(controller) {
+      return document.querySelector(`#${controller.getAttribute('aria-controls')}`);
+    }
+
+    const getController = function(controlledElement) {
+      return document.querySelector(`[aria-controls="${controlledElement.getAttribute('id')}"]`);
+    }
+
+    const hideMainMain = function() {
+      burgerIcon.classList.add('fa-bars');
+      burgerIcon.classList.remove('fa-times');
+      burgerMenu.setAttribute('aria-expanded', false);
+      burgerMenu.setAttribute('data-burger', 'closed');
+      mainMenu.setAttribute('data-burger', 'closed');
+    }
+
+    const showMainMenu = function() {
+      burgerIcon.classList.add('fa-times');
+      burgerIcon.classList.remove('fa-bars');
+      burgerMenu.setAttribute('aria-expanded', true);
+      burgerMenu.setAttribute('data-burger', 'open');
+      mainMenu.setAttribute('data-burger', 'open');
+    }
+
+    burgerMenu.addEventListener('click', function(evt) {
+      mainMenu.dataset.burger === 'open' ? hideMainMain() : showMainMenu();
+    });
+
+    const dropdownIsOpen = function(btn) {
+      const dropdown = getControlledElement(btn);
+      return dropdown.style.display === 'block';
+    }
+
+    const closeDropdown = function(btn) {
+      const dropdown = getControlledElement(btn);
+      dropdown.removeAttribute('style');
+      dropdown.style.removeProperty('display');
+      btn.parentElement.classList.remove('menu-active');
+      btn.setAttribute('aria-expanded', false);
+    }
+
+    const closeAllDropdowns = function() {
+      toggleBtns.forEach(closeDropdown);
+    }
+
+    const openDropdown = function(btn) {
+      closeAllDropdowns();
+      const dropdown = btn.parentElement.nextElementSibling;
+      dropdown.style.display = 'block';
+      btn.parentElement.classList.add('menu-active');
+      btn.setAttribute('aria-expanded', true);
+    }
+
+    const toggleDropdown = function(btn) {
+      dropdownIsOpen(btn) ? closeDropdown(btn) : openDropdown(btn);
+    }
+
+    toggleBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(evt) {
+        evt.preventDefault(); 
+        toggleDropdown(btn); 
+      });
+    });
+
+
+    document.addEventListener('keydown', function(evt) {
+      const el = document.activeElement;
+      const parent = el.parentNode;
+      const grandparent = parent.parentNode;
+      const key = evt.key;
+
+      
+      if (el === burgerMenu) {
+        if (key === 'Enter') {
+          burgerMenu.click();
+        }
+      }
+      
+      else if (!mainMenu.contains(el)) {
+        return;
+      }
+      
+      else if (toggleBtns.includes(parent)) {
+        if (key === 'ArrowDown') {
+          if (!dropdownIsOpen(parent)) {
+            openDropdown(parent);
+          }
+          else {
+            const submenu = getControlledElement(parent);;
+            submenu.querySelector('li a').focus();
+          }
+          evt.preventDefault();
+        }
+        else if (key === 'ArrowUp') {
+          closeDropdown(parent);
+          evt.preventDefault();
+        }
+        else if (key === 'Enter') {
+          toggleDropdown(parent);
+        }
+      }
+      
+      else if (grandparent.classList.contains('sub-menu')) {
+        const submenu = grandparent;
+        const items = Array.from(grandparent.querySelectorAll('li a'));
+        const index = items.indexOf(el);
+        let newFocus;
+        if (key === 'ArrowDown' && index < items.length - 1) {
+          newFocus = items[index + 1];
+        }
+        else if (key === 'ArrowUp') {
+          if (index) {
+            newFocus = items[index - 1];
+          }
+          else {
+            newFocus = getController(grandparent).firstChild;
+          }
+        }
+        if (newFocus) {
+          newFocus.focus();
+          evt.preventDefault();
+        }
+      }
+      
+      else if (mainMenu.contains(el) && el.tagName.toLowerCase() !== 'a' && parent.tagName.toLowerCase() === 'a') {
+        if (key === 'Enter') {
+          parent.click();
+        }
+      }
+    });
+
+
+    function updateCartElement() {
+      const cartCount = document.getElementById('cart-count')
+      const cartElement = document.getElementById('cart-element')
+
+      const length = cart.getNumberOfDistinctItems();
+      cartCount.textContent = length;
+
+      if (!length) {
+        cartElement.style.display = 'none';
+      }
+      else {
+        document.getElementById('plural').textContent = length > 1 ? 'S' : '';
+        cartElement.style = 'inline-block'
+      }
+    }
+
+    document.addEventListener('cartupdate', updateCartElement);
+
+    updateCartElement();
+  })();
+</script>
+
+  
+  <div class="body-top">
+    <div class="body-mid">
+      <div class="body-top-left">
+        <h3>CREATING<span>CLARITY WITH</span> <span>YOUR DATA.</span></h3>
+        <h3>SAVING ORGANISATIONS LIKE YOURS THOUSANDS OF WORK HOURS</h3>
+        <p>
+          Jumping Rivers is an analytics company whose passion is data and
+          machine learning. We help our clients move from data storage to data
+          insights.
+        </p>
+        <div class="button">
+          <a href="/training/all-courses/">TRAINING COURSES <i class="fa fa-angle-double-right"></i></a>
+          <a href="/consultancy">CONSULTANCY <i class="fa fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <div class="body-top-right">
+        <img src="https://d33wubrfki0l68.cloudfront.net/7ea9fd57c45bb6806dd2c3e85123e2706e311d4d/57a0b/images/trs.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+  
+
+  <div class="training">
+    <div class="training-mid">
+      <h1>SHAPING YOUR INSIGHT WITH DATA SOFTWARE TRAINING</h1>
+      <div class="training-box">
+        <div class="training-box-1 boxes-flex">
+          <img src="https://d33wubrfki0l68.cloudfront.net/b54c62474b0e10fbdfbe1f72358354afcdf90624/4313e/images/tr1.jpg" alt="" />
+          <h3>TRAINING COURSES</h3>
+          <p>
+            Trainers from Jumping Rivers have run over 100 programming and data
+            science courses across Europe.
+          </p>
+          <a href="/training/all-courses/">View all courses</a>
+        </div>
+        <div class="training-box-2 boxes-flex">
+          <img src="https://d33wubrfki0l68.cloudfront.net/1d061d52bedea154ee547f413fdd0106f8c323c2/18ee9/images/tr2.jpg" alt="" />
+          <h3>CONSULTANCY</h3>
+          <p>
+            Our consultants come with over 40 years combined experience in R,
+            Python, Stan, Scala and other programming languages and range from
+            lecturers and Doctors to graduates of statistics.
+          </p>
+          <a href="/consultancy/">Discover more</a>
+        </div>
+        <div class="training-box-3 boxes-flex">
+          <img src="https://d33wubrfki0l68.cloudfront.net/67a9eab888d34fa70628c534b70c01352714dfd4/940a6/images/tr3.jpg" alt="" />
+          <h3>CASE STUDIES</h3>
+          <p>
+            Find out the challenges, projects and results provided in our case
+            studies.
+          </p>
+          <a href="/case-studies/">Explore our case studies</a>
+        </div>
+
+
+
+        <div class="training-box-4 boxes-flex">
+          <img src="https://d33wubrfki0l68.cloudfront.net/07c8833ef2b59ee1eabf1e2631d7fece3e883b9a/9f5d7/images/tr4.jpg" alt="" />
+          <h3>BLOG AND <span>COMMUNITY</span></h3>
+          <p>
+            Here at Jumping Rivers, we love data science. One of the huge benefits
+            of data science is the transparency. For example, R. Being an open
+            source language, it immediately is giving something back to the
+            community that propels it to the top of the data science ladder.
+          </p>
+          <a href="/blog/">Visit our blog</a>
+        </div>
+        <div class="training-box-5 boxes-flex">
+          <h3>SPECIALIST TRAINING COURSES <span>TO FIT YOUR DATA NEEDS</span></h3>
+          <p>
+            Our trainers and consultants come with over 40 years combined
+            experience in R, Python, Stan, Scala and other programming languages.
+          </p>
+          <a href="/training/all-courses/">VIEW ALL COURSES</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+
+  
+
+<div class="francis">
+	<div class="francis-blur">
+        <div class="carousel-container" style="width:400%">
+            
+			<div class="francis-slide">
+				<div class="francis-mid">
+					<h1>NHS Scotland</h1>
+					
+					<p>&#34;Pace of delivery was just right, good mix of walked through examples and practical exercises. The course was clearly and methodically taught, the practical examples were realistic, and the tutors were friendly and approachable. Instructors - really friendly, helpful and patient.&#34;
+</p>
+				</div>
+			</div>
+			
+			<div class="francis-slide">
+				<div class="francis-mid">
+					<h1>Francis Crick</h1>
+					
+					<p>&#34;Overall, it is a great course for absolute beginners. Good course, really helpful, good amount of time to practise the code learnt&#34;
+</p>
+				</div>
+			</div>
+			
+			<div class="francis-slide">
+				<div class="francis-mid">
+					<h1>Shell International Petroleum Company</h1>
+					<p>Alex Hancock - Global IT Manager: Data &amp; Analytics
+</p>
+					<p>&#34;Colin&#39;s excellent training on R is now the gold standard for my team. The combination of theory, practical examples, and his flare for instruction make the training very accessible, and have really helped us leverage the power of R.&#34;
+</p>
+				</div>
+			</div>
+			
+			<div class="francis-slide">
+				<div class="francis-mid">
+					<h1>Nicole Avison</h1>
+					<p>Sustrans
+</p>
+					<p>&#34;I have attended several of Colin&#39;s R programming courses over the last few years. In delivering courses to our department he tailored the courses to our line of work, which really helped in applying the theory to real life. Colin has also helped me learn how to apply version control to our R code, which has resulted in us piloting a new way of developing R code.&#34;
+</p>
+				</div>
+			</div>
+					
+		</div>
+		<div class="indicators">
+			
+			<span class="indicator"></span>
+			
+			<span class="indicator"></span>
+			
+			<span class="indicator"></span>
+			
+			<span class="indicator"></span>
+			
+		</div>
+	</div>
+
+	
+</div>
+
+
+<script>
+	
+	
+    const slides= document.querySelectorAll('.francis-slide');
+    const indicators= document.querySelectorAll('.indicator');
+    let size = slides[0].clientWidth;
+    
+    slides.forEach((slide)=>{
+        slide.style.transition= 'transform 0.4s ease-in-out';
+        slide.style.transform= 'translateX('+(-size*0)+ 'px)';
+        })
+    indicators.forEach((item)=>{
+        item.style.opacity= "0.2";
+    })
+    indicators[0].style.opacity= "1";
+
+    indicators.forEach((indicator,index)=>{
+        indicator.addEventListener('click',(event)=>{
+            slides.forEach((slide)=>{
+                slide.style.transition= 'transform 0.4s ease-in-out';
+            slide.style.transform= 'translateX('+(-size*index)+ 'px)';
+            })
+            indicators.forEach((item)=>{
+                item.style.opacity= "0.2";
+            })
+            indicator.style.opacity= "1";
+        })
+    })
+     window.addEventListener("resize", (event)=>{
+        size = slides[0].clientWidth;
+        slides.forEach((slide)=>{
+        slide.style.transition= 'transform 0.4s ease-in-out';
+        slide.style.transform= 'translateX('+(-size*0)+ 'px)';
+        })
+    });
+    
+
+
+
+
+</script>
+
+  
+
+  
+
+  <div class="partnering">
+    <div class="partnering-mid">
+      <h1>PARTNERING WITH</h1>
+      <div class="partnering-row">
+        <div class="partnering-left">
+          <img src="https://d33wubrfki0l68.cloudfront.net/4cbb79bc8c9550414bb5b7df36278e91b9c3bbce/fd193/images/nu-logo.svg" alt="" style="padding-top: 40px;" />
+          <p>
+            We've worked from day one with the School of Mathematics, Statistics and Physics from Newcastle University, on cutting edge data science projects.
+          </p>
+        </div>
+        <div class="partnering-right">
+          <img src="https://d33wubrfki0l68.cloudfront.net/1288ade1cdc9dfd92e59d85d5f9eaf4953c78389/458fd/images/p3.jpg" alt="" />
+          <p>
+            Jumping Rivers provides training and technical support for RStudio Shiny
+            dashboards and infrastructure. As such, we work with RStudio to help our
+            clients understand how R can revolutionise their data science pipeline.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="partnering-mid">
+    <div class="partnering-row">
+      <div class="partnering-left">
+        <img src="https://d33wubrfki0l68.cloudfront.net/67db1493b6ca8df202873ae21b0cd41b4f8631b5/6a0d3/images/p2.jpg" alt="" />
+        <p>
+          We are proud to support the Python Software Foundation and PyCon.
+          As data scientists, we regularly use R and Python, and it's
+          important to give something back to the organisations that make all this happen.
+        </p>
+      </div>
+      <div class="partnering-right">
+        <img src="https://d33wubrfki0l68.cloudfront.net/42000bec67e5e16db46909e5bd9ae0d052699f98/9e988/images/p4.jpg" alt="" />
+        <p>
+          H2O AI Hybrid Cloud offers an end-to-end platform that democratizes artificial intelligence. Jumping Rivers
+          offer support at every step of this journey. This includes training, infrastructure and reselling.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  
+
+  
+  <div class="trust">
+    <div class="trust-mid">
+        <h1>TRUSTED BY</h1>
+        <hr>
+        <div class="slider">
+            <img src="https://d33wubrfki0l68.cloudfront.net/cebeaff60413c596219845d20b2dfe96b9bb5b34/68ef2/images/trusted-by/nhs.jpg" alt="NHS Logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/67a2e5d8843c3752190e29c7c486a17ddb3f911b/821e4/images/trusted-by/crick.jpg" alt="The Francis Crick Logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/b36ccbf073a0d5f03489c22458276757e2b4a805/7ec0e/images/trusted-by/rss.jpg" alt="The Royal Statistical Society">
+            <img src="https://d33wubrfki0l68.cloudfront.net/11e0ac8606c847c4a1dcf5bad435e65061e0d750/19b24/images/trusted-by/ncl.jpg" alt="Newcastle University logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/21e454758964f4b9a3cfc5874ebdef2fb3f7b392/f9ace/images/trusted-by/mod.jpg" alt="Ministry of Defence Logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/bc804d1457f246c5f4bc035771b4bfac38ea9777/67355/images/trusted-by/shell.jpg" alt="Shell Logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/95b6ce94c82d14adfa2f1eafa32b033bc6b609d8/44eb3/images/trusted-by/pragmatic.jpg" alt="PragmatIC">
+            <img src="https://d33wubrfki0l68.cloudfront.net/61a5b0a8ff290d990ebd18f178033da70c1b1171/b2f99/images/trusted-by/bangor.jpg" alt="Bangor University logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/eb0d7ae462de9795a8c7ab6b1346ced5d26d6bfe/52e7f/images/trusted-by/manchester.jpg" alt="Manchester University logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/64ed624a0c95c831a0c8803a7a60c48a7e14ad3e/1c769/images/trusted-by/sustrans.jpg" alt="Sustrans logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/e3e99f0307a337add4acfe510d113417fc28ff18/3b794/images/trusted-by/yorkshire.jpg" alt="Yorkshire bank logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/aa57c94193a2ece03a14709012a4a642a50e9611/7b636/images/trusted-by/hastings.jpg" alt="Hasting logo">
+        </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <div class="consultancy">
+    <div class="consultancy-mid">
+      <div class="consultancy-left">
+        <div class="left-box">
+          <h1>TAILORED CONSULTANCY BESPOKE DATA SOLUTIONS</h1>
+          <h3>
+            Our consultants have experience in programming, business and
+            analytics. We provide bespoke solutions to complex problems. Jumping
+            Rivers has strong links with academia and is kept up-to-date with the
+            latest techniques.
+          </h3>
+
+          <div class="data-solution-lists">
+            <div class="list-item">
+              <div class="bullet-point">
+                <div class="circle"></div>
+              </div>
+              <div class="bullet-text">
+                <p>Statistics - saved 2 months of work</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="bullet-point">
+                <div class="circle"></div>
+              </div>
+              <div class="bullet-text">
+                <p>Increased response times by 80%</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="bullet-point">
+                <div class="circle"></div>
+              </div>
+              <div class="bullet-text">
+                <p>Sorting 90% of data into understandable structure</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="/consultancy">TAILORED CONSULTANCY - FIND OUT MORE
+            <i class="fa fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <div class="consultancy-right">
+        <img src="https://d33wubrfki0l68.cloudfront.net/e06ffe0d4627eb2be905286b5e2268546256284f/82990/images/cons.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  <div class="remote">
+    <div class="remote-mid">
+      <h1>REMOTE TRAINING COURSES ARE AVAILABLE ON DEMAND</h1>
+      <p>
+        We provide tailored remote training courses onlinei designed to meet your business needs.</p>
+      <p>Contact Jumping Rivers for more information.</p>
+      <a href="/contact">ASK ABOUT REMOTE TRAINING COURSES</a>
+    </div>
+  </div>
+
+  
+
+  
+
+  <div class="our">
+    <div class="our-mid">
+      <h1>OUR CREDENTIALS</h1>
+      <p>
+        Jumping Rivers has delivered quality data insights from day 1. Based in
+        Newcastle and founded in 2016, the company is bringing a fresh approach to
+        the world of data analytics.
+      </p>
+      <ul>
+        <li>Authors with O'Reilly</li>
+        <li>Peer-reviewed papers</li>
+        <li>Live courses with O'Reilly</li>
+        <li>Regular speakers at conferences across the world</li>
+        <li>Partners with the Centre for Data</li>
+        <li>Partners with RStudio</li>
+        <li>Branded with Data Lab</li>
+        <li>Active sponsors for user groups across the world</li>
+      </ul>
+      <a href="/about">MORE ABOUT JUMPING RIVERS <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+
+  
+
+  
+  <div class="sign-up">
+  <div class="sign-up-mid">
+    <div class="sign-up-left">
+    
+
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Lato,Arial,sans-serif; }
+	 
+</style>
+ <h1>JOIN JUMPING RIVERS MONTHLY NEWSLETTER</h1>
+      <p>
+        Like data science? R? Python? Stan? Then you’d love the Jumping Rivers
+        newsletter! The perks of being part of the Jumping Rivers family are:
+      </p>
+      <ul>
+        <li>Be the first the know about the latest courses!</li>
+        <li>Discounts on the latest courses!</li>
+        <li>News on the latest techniques with the Jumping Rivers blog!</li>
+      </ul>
+
+<div id="mc_embed_signup">
+<form action="https://jumpingrivers.us12.list-manage.com/subscribe/post?u=5c0fadc6b0a4da5e65e3b8789&amp;id=f629373cb0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5c0fadc6b0a4da5e65e3b8789_f629373cb0" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                              class="button"></div>
+         We keep your data secure and will never share your details.
+     </div>
+</form>
+</div>
+<script type='text/javascript'
+        src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($)
+ {window.fnames = new Array(); window.ftypes = new
+  Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var
+  $mcj = jQuery.noConflict(true);</script>
+
+    </div>
+    <div class="sign-up-right">
+    <img src="https://d33wubrfki0l68.cloudfront.net/f5f9000046adfc0d82a824a1ef46eecb587dbf88/5812b/images/signup.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+
+<div class="footer-top example-post-background">
+  <div class="footer-top-mid">
+    <ul>
+      <li><a href="/website-terms">Website Terms Data and Privacy</a></li>
+      <li>|</li>
+      <li><a href="/booking-terms">Booking Terms</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="footer-bottom">
+  <div class="footer-bottom-mid">
+    <p>&copy;2022 Jumping Rivers</p>
+  </div>
+</div>
+
+
+
+
+<div class="scrolltop" role="button" tabindex="0" aria-label="Scroll to the top of the page">
+  <i class="fa fa-angle-up"></i>
+</div>
+
+
+
+<script src='https://d33wubrfki0l68.cloudfront.net/bundles/d09b7c93fa3c33a84a0113204f7412894494e1ba.js'></script>
+
+  <script>
+    const imageElement = document.querySelector('.body-top-right img');
+    if (!window.localStorage.getItem('imageUrl')) {
+      let imageName = imageElement.getAttribute('src');
+      localStorage.setItem('imageUrl', JSON.stringify(imageName));
+    } else {
+      let prevImage = JSON.parse(window.localStorage.getItem('imageUrl'));
+      if (prevImage === "/images/trs.jpg") {
+        imageElement.setAttribute("src", "/images/Jumping-Rivers-Home-1.jpg");
+        localStorage.setItem('imageUrl', JSON.stringify("/images/Jumping-Rivers-Home-1.jpg"));
+      } else {
+        imageElement.setAttribute("src", "/images/trs.jpg");
+        localStorage.setItem('imageUrl', JSON.stringify("/images/trs.jpg"));
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
